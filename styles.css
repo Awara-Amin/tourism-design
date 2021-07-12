@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("bg.png");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  margin: 0;
+}
+
+
+aside {
+  background-color: black;
+  width:200px;
+  /* I learnt from this project diffrences btween width= 200px, width= 100vw, max-width= 80px or 80%, 80vw, and min-width= the same*/
+  height: 100vh;
+  max-height: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+aside a {
+  color:yellow;
+}
+
+ul a {
+  color:white;
+  text-decoration: none;
+
+}
+
+ul li{
+  padding: 10px 10px;
+  /* margin: 20px; */
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+.special {
+  padding: 15px 0px;
+  background-color: gray;
+  font-size: 2rem;
+  width: 80%;
+  margin-left: 30px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+main {
+  color:white;
+  margin: 50px 100px;
+}
+
+main i{
+  font-size: 3rem;
+  margin: 20px 40px;
+}
+
+
+main h1{
+  font-size: 3rem;
+  margin: 20px 40px;
+}
+
+main p{
+  font-size: 2rem;
+  margin: 20px 40px;
+}
+
+@media screen and (max-width: 800px){
+
+ main h1{
+    font-size: 2rem;
+    margin: 20px 40px;
+  }
+
+  main p{
+    font-size: 1.5rem;
+    margin: 20px 40px;
+  }
+
+  body {
+    margin-top: 20px;
+    display: flex;
+    /* new i learnt from this project */
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+  }
+
+  aside {
+      /* height: auto; */
+      /* text-align: center; */
+      width: 100%;
+  }
+
+  main{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    min-height: 40vh;
+  }
+  /* this is nice */
+  aside ul {
+      display: flex;
+      flex-wrap: wrap;
+  }
+}

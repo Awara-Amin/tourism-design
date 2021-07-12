@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+/* height: 100vh; means the height of this element is equal to 100% of the viewport height. example: height: 50vh; If your screen height is 1000px, your element height will be equal to 500px (50% of 1000px) */
+
+body {
+  background-image: url('bg.png');
+  background-size: cover;
+  background-position: center center;
+  /* eight: 100vh; means the height of this element is equal to 100% of the viewport height. */
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+
+}
+
+aside {
+  background-color: black;
+  width: 200px;
+  height: 100vh;
+}
+
+aside ul{
+  padding:0;
+  list-style: none;
+}
+
+aside a{
+  color:white;
+  text-decoration: none;
+  margin: 1rem;
+  display: inline-block;
+}
+
+
+.decoration{
+  color:white;
+  margin: 40px 0 0 200px;
+  font-size: 2rem;
+}
+
+.special{
+  background-color: yellow;
+  color: black;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+
+}
+
+main{
+  color:white;
+}
